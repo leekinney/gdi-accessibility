@@ -7,8 +7,8 @@ based on dark.css by Ivan Sagalaev
 
 pre code {
   display: block; padding: 0.5em;
-  background: #3F3F3F;
-  color: #DCDCDC;
+  background: #fff;
+  color: #333;
 }
 
 pre .keyword,
@@ -18,7 +18,7 @@ pre .django .keyword,
 pre .css .class,
 pre .css .id,
 pre .lisp .title {
-  color: #E3CEAB;
+  color: #333;
 }
 
 pre .django .template_tag,

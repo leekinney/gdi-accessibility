@@ -8,7 +8,7 @@
 
 .reveal h2 {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
-  /*font-size: 1.2em*/}
+  font-size: 1.2em}
 
 .reveal h3 {font-size: 1em;}
 
@@ -22,6 +22,9 @@ p.credit{
 
 h2.white, h3.white {color: #fff;}
 
+.left-align {text-align: left;}
+
+.green {color: #92BB44;}
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
@@ -71,7 +74,7 @@ p.virgin {font-size: 16px;}
 
 .italics {font-style: italic;}
 
-span.large {font-size: 1.5em; color: #111;}
+span.large {font-size: 1.5em;}
 
 p.useful {clear: both; margin-top: 40px;}
 
@@ -92,3 +95,16 @@ h2.contrast {margin-bottom: 40px;}
 .contrast2 {width: 45%; float: left; background: #ebebeb; color: #444; }
 
 .reveal code {font-size: 1.15em;}
+
+.reveal footer {position: fixed;
+  height: 40px;
+  width: 100%;
+  bottom: 3px;
+  left: 0;
+  z-index: 10;
+  font-size: 35%;
+  text-align: right;
+  background-image: url(pink-logo.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}

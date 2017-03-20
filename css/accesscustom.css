@@ -1,30 +1,31 @@
-.reveal h1, .reveal  h2, .reveal  h3, .reveal  h4, .reveal  h5, .reveal  h6{
-	color: #f3787e;
+@import 'accessibility-helper-plugin.css';
+
+.reveal section img.nonbordered{
+	border-width: 0;
+	box-shadow: none;
 }
 
-.reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
-  font-size: 1.5em}
-
-.reveal h2 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
-  font-size: 1.2em}
-
-.reveal h3 {font-size: 1em;}
+.reveal section.slides-index {
+  display: block;
+}
 
 p.credit{
-	font-size: 12px;
+	font-size: 60%;
 }
 
 .reveal section img {
-	max-height: 75%;
+	max-height: 600px;
 }
 
-h2.white, h3.white {color: #fff;}
+.reveal h1 {
+	font-size: 2em;
+}
 
-.left-align {text-align: left;}
+.reveal h2 {
+	font-size: 1.5em;
+}
 
-.green {color: #92BB44;}
+
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
@@ -56,55 +57,43 @@ h2.white, h3.white {color: #fff;}
     width: auto;
 }
 
-/*.slides section::after {content: ""; background: url(../img/background-bayada-logo.png) no-repeat; opacity: 0.5; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; background-position: 100% 100%; }*/
+.clear {
+  clear: both;
+  display: block;
+}
 
-.reveal a:not(.image) {color: #17BEBB; text-decoration: underline;}
+/*
+ * Code examples
+ */
+div.code-example {
+  margin:0 auto;
+  text-align: left;
+  width: 50%;
+}
+  .code-example label {
+    display: block;
+    font-size:1em;
+  }
+  .code-example input[type=text] {
+    font-size: 0.75em;
+    line-height: 1.5em;
+    width: 100%
+  }
+  .code-example div.float {
+    float: left;
+    padding-top: 30px;
+    width: 50%;
+  }
+  .code-example div label {
+    display: inline;
+    margin-right: 10px;
+  }
+  .code-example div input[type=radio] {
+    -webkit-transform: scale(2);
+  }
 
-.reveal a:not(.image):hover {text-decoration: underline; color: #CD5334;}
-
-.reveal a:not(.image):focus {background: #fab3a9;}
-
-.reveal section img {border: none; box-shadow: none;}
-
-p.credit {font-size: 14px; }
-
-p.virgin {font-size: 16px;}
-
-.tweet-embed {margin-left: 20%;}
-
-.italics {font-style: italic;}
-
-span.large {font-size: 1.5em;}
-
-p.useful {clear: both; margin-top: 40px;}
-
-ul.tools {margin-top: 30px;}
-
-ul.tools li {list-style: none;}
-
-ul.tools li a {font-size: 0.7em;}
-
-.pink {color: #f55e63;}
-
-h2.contrast {margin-bottom: 40px;}
-
-.contrast1 {width: 45%; background: #dbdbdb; color: #646464; padding: 10px; float: left;}
+  .contrast1 {width: 45%; background: #dbdbdb; color: #646464; padding: 10px; float: left;}
 
 .contrast1 p, .contrast2 p {font-size: 18px; line-height: 150%;}
 
 .contrast2 {width: 45%; float: left; background: #ebebeb; color: #444; }
-
-.reveal code {font-size: 1.15em;}
-
-.reveal footer {position: fixed;
-  height: 40px;
-  width: 100%;
-  bottom: 3px;
-  left: 0;
-  z-index: 10;
-  font-size: 35%;
-  text-align: right;
-  background-image: url(pink-logo.png);
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-}

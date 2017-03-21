@@ -483,6 +483,48 @@ opens in a new window
             <p><a href="http://codecanyon.net/item/subscribe-popup/full_screen_preview/2421232">Popup sign up</a></p>
           </aside>
         </section>
+        <section>
+          <h2>How do I code for accessibility?</h2>
+          <h3>CSS</h3>
+          <ul>
+            <li>Visually Hidden Content</li>
+            <li>Really Hidden</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Visually Hidden Content</h2>
+          <h3>How does it work?</h3>
+<pre><code class="css" data-trim>/* Hide only visually, but have it available for screenreaders.
+Copied from HTML5 Boilerplate*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+</code></pre>
+            <p><a href="http://snook.ca/archives/html_and_css/hiding-content-for-accessibility">Hiding Content for Accessibility</a></p>
+          </section>
+
+          <section>
+            <h2>Really Hidden</h2>
+            <h3>How to show and hide content from all users</h3>
+<pre><code class="css" data-trim>.reallyHidden {
+  display: none;
+  visibility: hidden;
+}
+.notHidden {
+  display: block;
+  visibility: visible;
+}
+</code></pre>
+          </section>
 
                 <section>
           <h2>Form Labels</h2>
@@ -554,49 +596,6 @@ name="name-field" placeholder="Type your name" /&gt;
           <p>Note: <code>tabindex</code> values higher than 0 require managing the entire page's tab order. Use with caution!</p>
           <aside class="notes">Explicitly mention the pitfalls of positive tabindex values, including the extra maintance and testing. Tabindex is like z-index; any positive value will supercede everything else on the page.</aside>
         </section>
-
-        <section>
-          <h2>How do I code for accessibility?</h2>
-          <h3>CSS</h3>
-          <ul>
-            <li>Visually Hidden Content</li>
-            <li>Really Hidden</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Visually Hidden Content</h2>
-          <h3>How does it work?</h3>
-<pre><code class="css" data-trim>/* Hide only visually, but have it available for screenreaders.
-Copied from HTML5 Boilerplate*/
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-</code></pre>
-            <p><a href="http://snook.ca/archives/html_and_css/hiding-content-for-accessibility">Hiding Content for Accessibility</a></p>
-          </section>
-
-          <section>
-            <h2>Really Hidden</h2>
-            <h3>How to show and hide content from all users</h3>
-<pre><code class="css" data-trim>.reallyHidden {
-  display: none;
-  visibility: hidden;
-}
-.notHidden {
-  display: block;
-  visibility: visible;
-}
-</code></pre>
-          </section>
 
         <!-- Final slides-->
         <section>

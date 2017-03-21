@@ -41,7 +41,7 @@ body {
   font-family: "Gotham-Round", sans-serif;
   font-size: 36px;
   font-weight: 300;
-  color: #53555C; }
+  color: #191818; }
 
 ::selection {
   color: white;
@@ -67,7 +67,7 @@ body {
   color: #f05b62;
   font-family: "Gotham-Round", Impact, sans-serif;
   font-weight: 300;
-  line-height: 0.9em;
+  line-height: 1em;
   letter-spacing: 0.02em;
   text-transform: none;
   text-shadow: none; }
@@ -169,7 +169,7 @@ body {
     width: 100%;
     bottom: 3px;
     left: 0;
-    z-index: 10; 
+    z-index: 10;
     font-size: 35%;
     text-align:left;
     background-image: url(../images/pink-logo.png);
